@@ -2,10 +2,30 @@
   "name": "addresslistgenerator",
   "version": "0.0.1",
   "description": "automate address list creation for kindergarten groups",
-  "main": "index.js",
+  "main": "dist/Generator.js",
   "scripts": {
+    "start": "tsc && node dist/Generator.js",
+    "lint": "eslint . --ext .ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "Tina Abt",
-  "license": "ISC"
+  "license": "ISC",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/anitba/AddressListGenerator.git"
+  },
+  "keywords": [],
+  "bugs": {
+    "url": "https://github.com/anitba/AddressListGenerator/issues"
+  },
+  "homepage": "https://github.com/anitba/AddressListGenerator#readme",
+  "devDependencies": {
+    "@typescript-eslint/eslint-plugin": "^5.40.0",
+    "eslint": "^8.25.0",
+    "eslint-config-standard-with-typescript": "^23.0.0",
+    "eslint-plugin-import": "^2.26.0",
+    "eslint-plugin-n": "^15.3.0",
+    "eslint-plugin-promise": "^6.0.1",
+    "typescript": "^4.8.4"
+  }
 }
